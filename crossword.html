@@ -1,65 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--
+This is a copy of exolve-m.html that can be used without hosting the
+exolve-m.js and exolve-m.css files, as this links to their latest
+copies at https://viresh-ratnakar.github.io/.
+MIT License
+Copyright (c) 2019 Viresh Ratnakar
+See the full Exolve license notice in exolve-m.js.
+Version: Exolve v1.47 December 19, 2022
+-->
 
+<link rel="stylesheet" type="text/css" href="https://viresh-ratnakar.github.io/exolve-m.css?v1.47"/>
+<script src="https://viresh-ratnakar.github.io/exolve-m.js?v1.47"></script>
+
+<title>Exolve</title>
+
+</head>
 <body>
-<link rel="stylesheet" type="text/css" href="https://viresh-ratnakar.github.io/exolve-m.css"/>
-<script src="https://viresh-ratnakar.github.io/exolve-m.js"></script>
-
-<div id="exolve"></div>
 <script>
-  createExolve(`
-===+==REPLACE WITH YOUR PUZZLE BELOW======
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
 exolve-begin
-exolve-id: Trail_4
-exolve-title: Litsoc '22
-exolve-setter: Onekilla - Supondi
-exolve-preamble: 
-<center>WGC IITM</center>
-<center>All cloos are Kosher, do not forget to fill hostel name. </center>
-exolve-copyright: 2021 WGC 2020 Exolve
-exolve-width: 13
-exolve-height: 13
-exolve-grid:
-.	0	0	0	0	0	0	0	0	0	0	.	.
-.	0	.	0	.	0	.	0	.	0	.	0	.
-0	0	0	0	0	0	0 0	.	0	0	0	0
-.	0	.	0	.	0	.	0	.	0	.	0	.
-.	0	0	0	0	.	0	0	0	0	0	0	0
-.	.	.	0	.	0	.	0	.	.	.	0	.
-.	0	0	0	0	0	0	0	0	0	0	0	.
-.	0	.	. .	0	.	0	.	0	.	. .
-0	0	0	0	0	0	0	.	0	0	0	0	.
-.	0	.	0	.	0	.	0	.	0	.	0	.
-0	0	0	0	.	0	0	0	0	0	0	0	0
-.	0	.	0	.	0	.	0	.	0	.	0	.
-.	.	0	0	0	0	0	0	0	0	0	0	.
-exolve-maker:
-  <i>Done!</i>
+  exolve-id: exolve-example
+  exolve-title: cinephile crossword
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  # exolve-setter: Your-Setter-Name-Or-Pseudonym
+  # exolve-copyright: 2022 Comma-separated-copyright-holders
+  exolve-width: 7
+  exolve-height: 7
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    0000000
+    0.000.0
+    0000000
+    0.....0
+    0000000
+    0.000.0
+    0000000
+
+
 exolve-across:
-1	Oui! Male bot manufactured a car (10)
-7	Data representations of battle plans (3,5)
-8	Crop one-third of the border (4)
-9	Come to terms with coffee shop swapping central ingredient of mocha with some frappe (4)
-10	Harry taken into custody for mass murder (7)
-12	Athlete's disheveled velour pleat (11)
-14	Singers exclude ukulele lead following article by newscasters (7)
-16	Drool over bonuses (4)
-19	Setters answer vocally on website (4)
-20	Solver announces promotion of new clothing for organization (8)
-21	Runway expert abandons head pilot in late dinner function of the Spanish (10)
+1   ac1 scxhgcfgc (7)
+6   ac2 ffgcghchd (3)
+7   ac3 fgxfnbcfg (7)
+8   ac4 cfcvcghgg (7)
+12  ac5 gggggggggggggg (3)
+13  ac6 dhgmfh (7)
 exolve-down:
-1	Amateur clown from the south's unfriendly (5)
-2	Classic, relevant, loveless and young inside (7)
-3	Back space's secure (4) 
-4	Try hard to tug at submarine's capsizing contents (4,1,3)
-5	Admit the french vessel (3,2)
-6	Wait in line to welcome some guests of Regina (6)
-11	Reject the fact that a bowler can only bowl 6 balls in a row? (8)
-12	Primarily used in paperwork, erasable, notetaking, colouring instrument of student (6)
-13	Walked quietly over ditch to journalist (7)
-15	Elevated cry sounds like a three line poem? (5)
-17	First truly ancient and mystical indian language (5)
-18	Record layer (4)
+1   dw1 fgghmvgh gfhgmvhm (7)
+2   dw2 cggvhv ghdghvb (3)
+3   dw3 gvmmcm vghmvnd (3)
+4   dw4 vgmvvghm gfhgvgm (3)
+5   dw5 cfgmgcgvgh fghf (7)
+9   dw6 ghgmvgvhv fvghv (3)
+10  dw7 ffhvg ghfhhg (3)
+11  dw8 tgbfhfdh ftugi (3)
+
 exolve-option: colour-button:#c21212 color-button-hover:#b91212
 exolve-option: colour-active:#f69f9f
 exolve-option: colour-separator:#880D0D
@@ -71,7 +72,14 @@ exolve-question : One of your names:
 exolve-question : Phone Number:
 exolve-question : Hostel name:
 exolve-option : clues-at-right-in-two-columns
-exolve-submit : https://docs.google.com/forms/d/e/1FAIpQLSe06LtOyri_BAwfmUjW8tyqlSM_WpAKBxIsN-4OPwWBb68RxA/viewform?usp=pp_url entry.712383440 entry.2026501809 entry.1802715621 entry.2072013116
+exolve-submit : https://docs.google.com/forms/d/e/1FAIpQLSd9fTgwdkS1X6oy5EZ62p-9JRY9XuhdbY46Et5IEBcOcZdt9Q/viewform?usp=pp_url entry.1111546149 entry.1047039997 entry.1254291596 entry.1772744897
+    # Note that you can provide an annotation after the closing parenthesis in
+    # any clue, which will get shown after the solver "Reveal"s the clue.
+  # The Exolve format has lots of additional features. See details in the
+  # documentation at:
+  #   https://github.com/viresh-ratnakar/exolve/blob/master/README.md
+    
+
 exolve-end
 ======REPLACE WITH YOUR PUZZLE ABOVE======
 `);
