@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--
+This is a copy of exolve-m.html that can be used without hosting the
+exolve-m.js and exolve-m.css files, as this links to their latest
+copies at https://viresh-ratnakar.github.io/.
+MIT License
+Copyright (c) 2019 Viresh Ratnakar
+See the full Exolve license notice in exolve-m.js.
+Version: Exolve v1.47 December 19, 2022
+-->
+
+<link rel="stylesheet" type="text/css" href="https://viresh-ratnakar.github.io/exolve-m.css?v1.47"/>
+<script src="https://viresh-ratnakar.github.io/exolve-m.js?v1.47"></script>
+
+<title>Exolve</title>
+
+</head>
+<body>
+<script>
+createExolve(`
+======REPLACE WITH YOUR PUZZLE BELOW======
+exolve-begin
+  exolve-id: exolve-example
+  exolve-title: cinephile crossword
+  # Uncomment and edit the next two lines if you want to show the setter's name
+  # and/or show a copyright notice.
+  # exolve-setter: Your-Setter-Name-Or-Pseudonym
+  # exolve-copyright: 2022 Comma-separated-copyright-holders
+  exolve-width: 7
+  exolve-height: 7
+  # You can provide solution letters instead of zeroes in the grid, which
+  # will create control buttons for revealing and checking entered letters.
+  exolve-grid:
+    0000000
+    0.000.0
+    0000000
+    0.....0
+    0000000
+    0.000.0
+    0000000
+
+
+exolve-across:
+1   ac1 scxhgcfgc (7)
+6   ac2 ffgcghchd (3)
+7   ac3 fgxfnbcfg (7)
+8   ac4 cfcvcghgg (7)
+12  ac5 gggggggggggggg (3)
+13  ac6 dhgmfh (7)
+exolve-down:
+1   dw1 fgghmvgh gfhgmvhm (7)
+2   dw2 cggvhv ghdghvb (3)
+3   dw3 gvmmcm vghmvnd (3)
+4   dw4 vgmvvghm gfhgvgm (3)
+5   dw5 cfgmgcgvgh fghf (7)
+9   dw6 ghgmvgvhv fvghv (3)
+10  dw7 ffhvg ghfhhg (3)
+11  dw8 tgbfhfdh ftugi (3)
+
+exolve-option: colour-button:#c21212 color-button-hover:#b91212
+exolve-option: colour-active:#f69f9f
+exolve-option: colour-separator:#880D0D
+exolve-relabel:
+	check-all: Check All
+	clear-all: Clear All
+  reveal-all: Reveal All
+exolve-question : One of your names:
+exolve-question : Phone Number:
+exolve-question : Hostel name:
+exolve-option : clues-at-right-in-two-columns
+exolve-submit : https://docs.google.com/forms/d/e/1FAIpQLSd9fTgwdkS1X6oy5EZ62p-9JRY9XuhdbY46Et5IEBcOcZdt9Q/viewform?usp=pp_url entry.1111546149 entry.1047039997 entry.1254291596 entry.1772744897
+    # Note that you can provide an annotation after the closing parenthesis in
+    # any clue, which will get shown after the solver "Reveal"s the clue.
+  # The Exolve format has lots of additional features. See details in the
+  # documentation at:
+  #   https://github.com/viresh-ratnakar/exolve/blob/master/README.md
+    
+
+exolve-end
+======REPLACE WITH YOUR PUZZLE ABOVE======
+`);
+</script>
+</body>
+</html>
