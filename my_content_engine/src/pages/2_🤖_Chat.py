@@ -11,10 +11,12 @@ st.title("💭 Chat with the PDF Bot")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
+    
 # Display previous chat messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
+        
 # Accept user input in the chat interface
 if prompt := st.chat_input("What is your question?"):
     # Display user input as a chat message

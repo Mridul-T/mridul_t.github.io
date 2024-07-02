@@ -35,6 +35,7 @@ llm = LlamaCpp(
     n_ctx=2048,
     f16_kv=True,  # MUST set to True, otherwise you will run into problem after a couple of calls
     verbose=False,
+    streaming=True
 )
 
 
@@ -66,8 +67,7 @@ def modify_output(input):
     for text in input.split():
         # Yield the word with an added space
         yield text + " "
-        # Introduce a small delay between each word
-        time.sleep(0.005)
+        time.sleep(0.001)
 
 
         
