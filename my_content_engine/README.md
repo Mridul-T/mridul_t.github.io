@@ -29,9 +29,28 @@ I developed a Content Engine ChatBot, focusing on analyzing and comparing multip
 6. **Developing Chatbot Interface**: Built a chatbot interface using Streamlit, enabling users to interact with the system, obtain insights, and compare information across the documents.
 
 ### Prerequisites
-List any prerequisites here.
+While there are not specific pre requisites to use this code, you need to make aure that your C++ make tools and Windows SDK is up to date.
 
 ### Installation
+```css
+# First create a directory for your project. You can clone this repo or make one on your one. The structure should look like this
+my_content_engine/
+├── .gitignore
+├── data/
+│   ├── alphabet_10k.pdf
+│   ├── tesla_10k.pdf
+│   └── uber_10k.pdf
+├── myenv/
+├── src/
+│   ├── pages/
+│   ├── hello.py
+│   ├── process_and_store.py
+│   ├── utils.py
+├── requirements.txt
+└── README.md
+
+```
+
 ```sh
 # Create a virtual python enviornment.
 python -m venv myenv
@@ -41,4 +60,32 @@ python -m venv myenv
 # Install dependencies
 pip install -r requirements.txt
 ```
+### Download and install the embedding model and the llm either from github or huggingface. 
+```sh
+# github code to download the models
+git lfs install
+git clone https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+
+git clone https://huggingface.co/TheBloke/llama2-7B-layla-GGUF/llama2-7b-layla.Q5_K_S.gguf
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/TheBloke/llama2-7B-layla-GGUF/llama2-7b-layla.Q5_K_S.gguf
+```
+You can use any other model of your choice as well, just make sure to make the required changes in the `utils.py`.
+
+### Once you have downloaded and clone the repository perfectly, we can store the data of the PDFs as embeddings in the vector database. We'll be using `chromadb` for this. Go through the file `process_and_store.py` for more details.
+```sh
+# You can run this file using
+python3 process_and_store.py
+```
+Make sure you have activated the virtual envirment and installed all the required packages.
+
+### Now all that's left is to host the ChatBot Locally using streamlit and the following command
+```sh
+streamlit run .\src\Hello.py
+```
+If you want the details of the implementation of the chatbot, query engine and the vector database. You can go through the files in the `src` folder.
+
+### Example Usage:
+![image](https://github.com/Mridul-T/mridul_t.github.io/assets/121259465/da7c6167-7be7-4ca9-abf5-37dd5cc746c2)
+
 `NOTE`: The bot can work slow depending on the specification of your system.
