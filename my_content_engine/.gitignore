@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+myenv/
+all-MiniLM-L6-v2/
+llama2-7b-layla.Q5_K_S.gguf
